@@ -6,7 +6,7 @@ const GPMDP_JSON = process.env.GPMDP_JSON;
 const OUTPUT_DIR = './';
 
 if (!GPMDP_JSON) {
-  console.error(`You must declare "GPMDP_INPUT" in your env.`);
+  console.error(`You must declare "GPMDP_JSON" in your env.`);
   process.exit();
 }
 
