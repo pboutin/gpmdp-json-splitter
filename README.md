@@ -1,4 +1,4 @@
-# gpmdp-json-splitter
+# gpmdp-obs-formatter
 
 The main idea here is to take the JSON data from (Google Play Music Desktop Player)[https://www.googleplaymusicdesktopplayer.com/] and extract the current song information into individual files that can be used by (OBS)[https://obsproject.com].
 
@@ -12,4 +12,4 @@ And finally, run it
 
 `node index.js`
 
-The "title", "artist" and "album" text files will be located into the `dist` folder that is next to the `index.js`.
+There `current_song.txt` will be kept updated while the script runs.
