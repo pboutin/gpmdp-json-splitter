@@ -14,6 +14,7 @@ jsonFilePath = path.normalize(GPMDP_JSON);
 
 fs.watchFile(jsonFilePath, function() {
   const {song: {title, artist}} = JSON.parse(fs.readFileSync(jsonFilePath));
-  console.log(`Updating : ${title} - ${artist}`);
-  fs.writeFileSync(`${OUTPUT_DIR}/current_song.txt`, `${title} - ${artist}`);
+  const output = `${title} - ${artist}`
+  console.log(`Updating : ${output}`);
+  fs.writeFileSync(`${OUTPUT_DIR}/current_song.txt`, output);
 });
